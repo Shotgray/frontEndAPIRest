@@ -1,0 +1,12 @@
+<h3>NUEVO USUARIO</h3>
+<div class="mb-3">
+    <label for="loginInput" class="form-label">Nombre Usuario</label>
+    <input type="text" class="form-control" id="loginInput" placeholder="nombre usuario" #inputLogin>
+  </div>
+
+  <div class="mb-3">
+    <label for="passwordInput" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="passwordInput" #inputPassword>
+  </div>
+
+  <a href="usuario" class="btn btn-primary btn-lg" tabindex="-1" role="button" (click)="crearUsuario(inputLogin.value, inputPassword.value)">Aceptar</a>
